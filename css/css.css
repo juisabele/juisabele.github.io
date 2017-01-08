@@ -22,7 +22,7 @@ html {
   top: 10px;
   text-align: left;
   color: black;
-  padding: 0 0 0 135px;
+  padding: 0 0 0 5vh;
   height: 25px;
   line-height: 20px;
   white-space: nowrap;
@@ -59,17 +59,18 @@ a:hover {
   position: relative;
   margin: 0 auto;
   align-content: center;
-  padding: 5vh 10px 5px 135px;
-  width: 100%;
+  padding: 1vh 0 0 5vh;
 }
 .section .section__inner {
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .section.section--home {
   background-color: #FDEF52;
   color: #181818;
-  width: 100%;
+  padding: 2vh 0 .5vh 5vh;
+  margin-left: 0;
+  width: 70vh;
 }
 
 .section.section contact {
