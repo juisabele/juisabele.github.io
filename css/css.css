@@ -9,7 +9,7 @@ html {
 }
 
 .side {
-  padding: 1px 90px 10px 5px;
+  padding: 1px 1px;
   font-family: "Bree Serif", serif;
   text-transform: uppercase;
   letter-spacing: .0875rem;
@@ -24,17 +24,18 @@ html {
 }
 
 .side .top {
-  top: 45px;
+  top: 10px;
   text-align: right;
   color: black;
 }
 
 .side .top {
   left: 0;
-  height: 90px;
-  line-height: 90px;
+  height: 25px;
+  line-height: 20px;
   white-space: nowrap;
   word-spacing: .5rem;
+  font-size: 20px;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
@@ -72,7 +73,6 @@ a:hover {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  min-height: 60vh;
   width: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
