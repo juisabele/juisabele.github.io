@@ -65,25 +65,16 @@ a:hover {
 
 .section {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   width: 100%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 5vh 90px 20vh 135px;
+  align-content: center;
+  padding: 5vh 10px 20vh 135px;
 }
 .section .section__inner {
   max-width: 800px;
 }
 
 .section.section--home {
-  height: 90%;
+  height: 80%;
   background-color: #FDEF52;
   color: #181818;
 }
