@@ -4,7 +4,7 @@
 html {
   font-family: "Bree Serif", serif;
   color: #555;
-  font-size: 16px;
+  font-size: 100%;
   width: 100%;
 }
 
@@ -13,7 +13,7 @@ html {
   font-family: "Bree Serif", serif;
   text-transform: uppercase;
   letter-spacing: .0875rem;
-  font-size: 10px;
+  font-size: 50%;
 }
 .side .side__inner {
   position: relative;
@@ -31,7 +31,7 @@ html {
   line-height: 20px;
   white-space: nowrap;
   word-spacing: .5rem;
-  font-size: 20px;
+  font-size: 250%;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
@@ -40,14 +40,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
     margin: 0 0 40px;
     line-height: 1;
     letter-spacing: -1px;
-    font-size: 70px;
+    font-size: 450%;
   }
 h2 {
   font-family: "Permanent Marker", cursive;
 }
 
  p {
-    font-size: 30px;
+    font-size: 200%;
   }
 
 a {
@@ -62,6 +62,7 @@ a:hover {
 .section {
   position: relative;
   width: 100%;
+  margin: 0 auto;
   align-content: center;
   padding: 5vh 10px 5px 135px;
 }
