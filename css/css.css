@@ -13,7 +13,6 @@ html {
   font-family: "Bree Serif", serif;
   text-transform: uppercase;
   letter-spacing: .0875rem;
-  font-size: 50%;
 }
 .side .side__inner {
   position: relative;
@@ -24,23 +23,20 @@ html {
   text-align: left;
   color: black;
   padding: 0 0 0 135px;
-}
-
-.side .top {
   height: 25px;
   line-height: 20px;
   white-space: nowrap;
   word-spacing: .5rem;
-  font-size: 250%;
+  font-size: 100%;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
     letter-spacing: -2px;
     font-weight: bold;
-    margin: 0 0 40px;
+    margin: 0 0 10px;
     line-height: 1;
     letter-spacing: -1px;
-    font-size: 450%;
+    font-size: 350%;
   }
 h2 {
   font-family: "Permanent Marker", cursive;
@@ -56,15 +52,15 @@ a {
 }
 
 a:hover {
-  border-bottom: .1875rem solid;
+  border-bottom: .3rem solid;
 }
 
 .section {
   position: relative;
-  width: 100%;
   margin: 0 auto;
   align-content: center;
   padding: 5vh 10px 5px 135px;
+  width: 100%;
 }
 .section .section__inner {
   max-width: 800px;
