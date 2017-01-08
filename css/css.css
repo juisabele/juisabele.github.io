@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+html {
+  box-sizing: border-box;
+  font-family: "Bree Serif", serif;
+  color: #555;
+  font-size: 16px;
+}
+
+.side {
+  padding: 1px 90px 10px 5px;
+  font-family: "Bree Serif", serif;
+  text-transform: uppercase;
+  letter-spacing: .0875rem;
+  font-size: 10px;
+}
+.side:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.side .side__inner {
+  position: relative;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.side .top {
+  top: 45px;
+  text-align: right;
+  color: black;
+}
+
+.side .top {
+  left: 0;
+  height: 90px;
+  line-height: 90px;
+  white-space: nowrap;
+  word-spacing: .5rem;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
+    letter-spacing: -2px;
+    font-weight: bold;
+    margin: 0 0 1em;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-size: 70px;
+  }
+h2 {
+  font-family: "Permanent Marker", cursive;
+}
+
+ p {
+    font-size: 30px;
+  }
+
+a {
+  text-decoration: none;
+  color: #DE5F5F
+}
+
+a:hover {
+  border-bottom: .1875rem solid;
+}
+
+.section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  min-height: 60vh;
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 20vh 90px 20vh 135px;
+}
+.section .section__inner {
+  max-width: 800px;
+}
+
+.section.section--home {
+  height: 100%;
+  background-color: #FDEF52;
+  color: #181818;
+}
+
+.section.section contact {
+  height: 10%;
+  fill: white;
+}
