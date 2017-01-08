@@ -15,12 +15,8 @@ html {
   letter-spacing: .0875rem;
   font-size: 10px;
 }
-.side:hover {
-  color: rgba(0, 0, 0, 0.5);
-}
 .side .side__inner {
   position: relative;
-  white-space: nowrap;
 }
 
 .side .top {
