@@ -61,7 +61,7 @@ a:hover {
   position: relative;
   width: 100%;
   align-content: center;
-  padding: 5vh 10px 20vh 135px;
+  padding: 5vh 10px 5px 135px;
 }
 .section .section__inner {
   max-width: 800px;
