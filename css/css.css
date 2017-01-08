@@ -76,7 +76,7 @@ a:hover {
   width: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 20vh 90px 20vh 135px;
+  padding: 5vh 90px 20vh 135px;
 }
 .section .section__inner {
   max-width: 800px;
