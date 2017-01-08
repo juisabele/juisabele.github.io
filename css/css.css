@@ -2,14 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif');
 
 html {
-  box-sizing: border-box;
   font-family: "Bree Serif", serif;
   color: #555;
   font-size: 16px;
 }
 
 .side {
-  padding: 1px 1px;
+  padding: 1px;
   font-family: "Bree Serif", serif;
   text-transform: uppercase;
   letter-spacing: .0875rem;
@@ -26,7 +25,6 @@ html {
 }
 
 .side .top {
-  left: 0;
   height: 25px;
   line-height: 20px;
   white-space: nowrap;
@@ -73,6 +71,7 @@ a:hover {
   height: 80%;
   background-color: #FDEF52;
   color: #181818;
+  width: 100%;
 }
 
 .section.section contact {
