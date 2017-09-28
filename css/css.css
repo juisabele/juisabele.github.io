@@ -1,77 +1,103 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif');
 
-html {
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
   font-family: "Bree Serif", serif;
-  color: #555;
-  font-size: 100%;
-  width: 100%;
 }
 
-.side {
-  padding: 1px;
-  font-family: "Bree Serif", serif;
-  text-transform: uppercase;
-  letter-spacing: .0875rem;
-}
-.side .side__inner {
-  position: relative;
-}
-
-.side .top {
-  top: 10px;
-  text-align: left;
-  color: black;
-  padding: 0 0 0 5vh;
-  height: 25px;
-  line-height: 20px;
-  white-space: nowrap;
-  word-spacing: .5rem;
-  font-size: 100%;
-}
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
-    letter-spacing: -2px;
-    font-weight: bold;
-    margin: 0 0 10px;
-    line-height: 1;
-    letter-spacing: -1px;
-    font-size: 350%;
-  }
-h2 {
-  font-family: "Permanent Marker", cursive;
-}
-
- p {
-    font-size: 200%;
-}
 a {
+  font-family: "Bree Serif", serif;
   text-decoration: none;
-  color: #DE5F5F
+  color: #DE5F5F;
 }
 
 a:hover {
-  border-bottom: .3rem solid;
+  color: black;
 }
 
-.section {
-  position: relative;
-  margin: 0 auto;
-  align-content: center;
-  padding: 1vh 0 0 5vh;
-}
-.section .section__inner {
-  max-width: 100vh;
+nav {
+  width: 20vw;
+  padding: .5vw;
+  margin: .5vw;
+  font-size: 120%;
 }
 
-.section.section--home {
+.top {
+  display: flex;
+  justify-content: space-around;
+}
+
+h2 {
+  font-family: "Permanent Marker", cursive;
+  line-height: 0.1em;
+  font-size: 350%;
+}
+
+.lead {
+  font-size: 150%;
+}
+
+.falaComigo {
+  color: #555;
+  font-size: 250%;
+  margin-top: -20px;
+}
+
+.section--home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   background-color: #FDEF52;
-  color: #181818;
-  padding: 4vh 0 .5vh 5vh;
-  margin-left: 0;
-  width: 100vh;
+  width: 50vw;
+  padding: .5vw;
+  margin: .5vw;
 }
 
-.section.section contact {
-  fill: white;
+.about {
+  font-size: 250%;
+  margin-top: -30px;
+}
+
+.section--contact {
+  width: 50vw;
+  padding: .5vw;
+  margin: .5vw;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .section--home {
+    width: 80vw;
+    padding: 5vw;
+    margin: 5vw;
+  }
+  .about {
+    font-size: 150%;
+    margin-top: -10px;
+  }
+
+  h2 {
+    font-size: 190%;
+  }
+  .lead {
+    font-size: 100%;
+  }
+  .falaComigo {
+    font-size: 150%;
+    margin-top: 10px;
+  }
+  nav {
+    width: 90vw;
+    padding-left: 5vw;
+  }
+  .section--contact {
+    padding: 0 5vw 5vw 5vw;
+    margin: 0 5vw 5vw 5vw;
+  }
 }
