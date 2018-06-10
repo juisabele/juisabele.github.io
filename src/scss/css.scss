@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import './mixin.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 1.875rem;
+  background-color: #f0f0f0;
+  color: #141823;
+}
+
+.container,
+.content {
+  max-width: 27rem;
+}
+
+.content {
+  padding: 4.3rem 1.25rem 3.125rem 1.25rem;
+  font: 1.25rem/1.75rem 'Open Sans', sans-serif;
+  letter-spacing: 1.2;
+  line-height: 1.45;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  background-color: #FDEF52;
+  overflow: auto;
+  resize: none;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  transform: translateZ(0);
+  -webkit-text-size-adjust: none;
+}
+
+mark,
+bluemark,
+pinkmark,
+greenmark {
+  padding: 0.0625rem;
+}
+
+mark {
+  background-color: gold;
+}
+
+bluemark {
+  background-color: lightblue;
+}
+
+pinkmark {
+  background-color: pink;
+}
+
+greenmark {
+  background-color: lightgreen;
+}
+
+.content:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  padding: 0.0625rem;
+  color: #1e1f23;
+}
+
+.highlight-link {
+  background-position: 0;
+  background-size: 200%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-bottom: 0.0625rem solid #141823;
+
+  &--pink {
+    background-image: -webkit-linear-gradient(left, #FDEF52 50%, lightpink 50%);
+    background-image: linear-gradient(to right, #FDEF52 50%, lightpink 50%);
+  }
+
+  &--blue {
+    background-image: -webkit-linear-gradient(left, #FDEF52 50%, lightblue 50%);
+    background-image: linear-gradient(to right, #FDEF52 50%, lightblue 50%);
+  }
+
+  &--green {
+    background-image: -webkit-linear-gradient(left, #FDEF52 50%, lightgreen 50%);
+    background-image: linear-gradient(to right, #FDEF52 50%, lightgreen 50%);
+  }
+}
+
+.highlight-link:hover {
+  background-position: -100%;
+}
+
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 32px;
+$max_font: 64px;
+
+.sketchy {
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  right: 0;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+.sketchy>span {
+  margin: 0 2vh;
+}
+
+.sketchy span {
+  display: inline-block;
+  position: relative;
+}
