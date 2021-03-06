@@ -3,7 +3,7 @@
 @import './reset.scss';
 
 body {
-  margin: 1.875rem;
+  margin-top: 1.875rem;
   background-color: #f0f0f0;
   color: #141823;
 }
@@ -87,6 +87,11 @@ a {
     background-image: -webkit-linear-gradient(left, #FDEF52 50%, lightgreen 50%);
     background-image: linear-gradient(to right, #FDEF52 50%, lightgreen 50%);
   }
+
+  &--grey {
+    background-image: -webkit-linear-gradient(left, #FDEF52 50%, lightsteelblue 50%);
+    background-image: linear-gradient(to right, #FDEF52 50%, lightsteelblue 50%);
+  }
 }
 
 .highlight-link:hover {
@@ -124,4 +129,33 @@ $max_font: 64px;
   .content {
     padding: 6.5rem 1.25rem 3.125rem 1.25rem;
   }
+}
+
+.highlight {
+  background-color: #FDEF52;
+}
+
+.footer {
+  display: block;
+  margin: 0 auto;
+  min-width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background: lightsteelblue;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  position: fixed;
+  bottom: 3.9rem;
+  font-size: 2rem;
+  left: 75%;
 }

@@ -1,29 +1,33 @@
+import css from '../scss/css';
+
 const WEIGHTS = [500, 700, 900];
 const MAX_ROTATE = 20;
 const MAX_SCALE = 1;
 const MIN_SCALE = 0.5;
 const IS_RANSOM = false;
 
-const el = document.querySelector('.sketchy');
-const text = el.innerText;
+const elements = document.querySelectorAll('.sketchy');
 const spans = [];
 
 const convertToSpans = () => {
-  const words = text.split(' ');
 
-  el.innerHTML = '';
-  words.forEach((word) => {
-    const letters = word.split('').filter(letter => !!letter.trim().length);
-    const wordSpan = document.createElement('span');
-    letters.forEach((letter) => {
-      const span = document.createElement('span');
-      span.className = 'letter';
-      span.innerText = letter;
-      wordSpan.appendChild(span);
-      spans.push(span);
-    })
-    el.appendChild(wordSpan);
-  });
+  elements.forEach((el) => {
+    const text = el.innerText;
+    const words = text.split(' ');
+    el.innerHTML = '';
+    words.forEach((word) => {
+      const letters = word.split('').filter(letter => !!letter.trim().length);
+      const wordSpan = document.createElement('span');
+      letters.forEach((letter) => {
+        const span = document.createElement('span');
+        span.className = 'letter';
+        span.innerText = letter;
+        wordSpan.appendChild(span);
+        spans.push(span);
+      })
+      el.appendChild(wordSpan);
+    });
+  })
 }
 
 const sketchify = () => {
